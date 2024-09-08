@@ -1,0 +1,150 @@
+body.page-template-tmpl_contact{
+	section.content{
+		.inner{
+			display: flex;
+	
+			.content{
+				width: 30%;
+				font-family: Montserrat;
+				font-size: 1.6rem;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 150%;
+	
+				h1{
+					display: inline-block;
+					font-family: $font-headers;
+					font-size: 3.6rem;
+					font-weight: 500;
+					line-height: 50px;
+					margin: 0 0 40px;
+					padding: 0;
+					text-transform: uppercase;
+					border-bottom: solid 8px $orange;
+				}
+	
+				p{
+					margin: 5px 0;
+					padding: 0;
+				}
+	
+				h2, h3, h4, h5{
+					font-weight: normal;
+					font-size: 2rem;
+					margin: 0;
+					padding: 0;
+					margin-bottom: 20px;
+				}
+			}
+	
+			.map{
+				width: 65%;
+				margin-left: 5%;
+
+				h3{
+					color: $orange;
+					font-family: Montserrat;
+					font-size: 2rem;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 155%;
+					margin-bottom: 0;
+				}
+
+				.headquarters-content{
+					display: flex;
+					gap: 60px;
+					width: 70%;
+
+					.address, .contact{
+						font-family: Montserrat;
+						font-size: 1.6rem;
+						font-weight: 400;
+						line-height: 155%; 
+					}
+				}
+			}
+
+			.gform_wrapper textarea.large{
+				height: 150px;
+			}
+
+			.gform_wrapper ul li.gfield {
+				margin-top: 10px;
+			}
+
+			.gform_wrapper .top_label div.ginput_container {
+				margin-top: 0;
+			}
+			
+			.gform_wrapper li.hidden_label input {
+				margin-top: 0;
+			}
+
+			.gform_wrapper input, .gform_wrapper textarea{
+				background-color: #F5F4F3;
+				border: none;
+				font-size: 1.6rem;
+				padding: 10px !important;
+				font-family: Montserrat;
+			}
+
+			.gform_wrapper .gform_footer {
+				padding: 0;
+				margin: 0;
+				clear: both;
+				width: 100%;
+				text-align: right;
+
+				input{
+					background-color: #fff;
+					border: solid 1px #424143;
+					cursor: pointer;
+					transition: all .2s;
+					
+					&:hover{
+						color: #fff;
+						background-color: #424143;
+					}
+				}
+			}
+		}
+	
+		@media only screen and (max-width: 1200px){
+			.inner{
+				.content{
+					width: 50%;
+				}
+
+				.map{
+					width: 50%;
+
+					.headquarters-content{
+						width: 100%;
+					}
+				}
+			}
+		}
+	
+		@media only screen and (max-width: 900px){
+			.inner{
+				display: block;
+		
+				.content{
+					width: 100%;
+					margin-bottom: 30px;
+	
+					h1{
+						font-size: 3rem;
+						margin: 0 0 20px;
+					}
+				}
+		
+				.map{
+					width: 100%;
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}

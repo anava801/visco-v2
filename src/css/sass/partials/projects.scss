@@ -1,0 +1,150 @@
+body.page-template-tmpl_projects{
+	section.case-studies{
+		margin-top: 20px;
+
+		.case-studies-outer{
+			.case-study{
+				display: flex;
+				gap: 50px;
+				border-bottom: solid 1px #424143;
+				padding-bottom: 40px;
+				margin-bottom: 40px;
+				padding-right: 10%;
+
+				.photo{
+					width: 60%;
+					max-width: 600px;
+					img{
+						width: 100%;
+					}
+				}
+
+				.content{
+					width: 50%;
+					font-family: Montserrat;
+					font-size: 1.6rem;
+					font-weight: 400;
+					line-height: 155%;
+
+					.title{
+						color: $orange;
+						font-family: Montserrat;
+						font-size: 2rem;
+						font-weight: 700;
+						line-height: 155%;
+					}
+				}
+
+				&.flipped{
+					flex-direction: row-reverse;
+				}
+
+				&:last-child{
+					border: none;
+				}
+			}
+		}
+	}
+
+	section.services{
+		background-color: #424143;
+		margin-bottom: 20px;
+
+		.inner{
+
+			h2{
+				color: #fff;
+				font-family: $font-headers;
+				font-size: 2.4rem;
+				font-weight: 500;
+				line-height: 130%;
+				text-transform: uppercase;
+				margin: 0 0 30px;
+			}
+
+			.services-container{
+				padding-left: 180px;
+				.service{
+					display: flex;
+					gap: 50px;
+					padding-bottom: 40px;
+					margin-bottom: 40px;
+					padding-right: 10%;
+	
+					.photo{
+						width: 60%;
+						max-width: 600px;
+						img{
+							width: 100%;
+						}
+					}
+	
+					.content{
+						color: #fff;
+						width: 50%;
+						font-family: Montserrat;
+						font-size: 1.6rem;
+						font-weight: 400;
+						line-height: 155%;
+	
+						.title{
+							color: #fff;
+							font-family: Montserrat;
+							font-size: 2rem;
+							font-weight: 700;
+							line-height: 155%;
+							margin-bottom: 10px;
+						}
+					}
+	
+					&.flipped{
+						flex-direction: row-reverse;
+					}
+	
+					&:last-child{
+						border: none;
+					}
+				}
+			}
+		}
+
+		@media screen and(max-width: 800px) {
+			.inner .services-container{
+				padding-left: 0px;
+				.service{
+					display: block;
+					padding-right: 0;
+	
+					.photo{
+						width: 100%;
+						max-width: 100%;
+						margin-bottom: 10px;
+					}
+	
+					.content{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and(max-width: 800px) {
+		section.case-studies .case-studies-outer{
+			.case-study{
+				display: block;
+				padding-right: 0;
+
+				.photo{
+					width: 100%;
+					max-width: 100%;
+					margin-bottom: 10px;
+				}
+
+				.content{
+					width: 100%;
+				}
+			}
+		}
+	}
+}

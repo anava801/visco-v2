@@ -1,0 +1,146 @@
+body.page-template-tmpl_innovation-park{
+	section.about{
+		.inner{
+			.content{
+				display: flex;
+				gap: 60px;
+
+				.left{
+					width: 50%;
+					img{
+						width: 100%;
+					}
+				}
+
+				.right{
+					width: 50%;
+					padding-right: 8%;
+					font-family: Montserrat;
+					font-size: 1.6rem;
+					font-weight: 400;
+					line-height: 155%;
+
+
+					h1, h2, h3, h4{
+						color: $orange;
+						font-family: Montserrat;
+						font-size: 2rem;
+						font-weight: 700;
+						line-height: 155%;
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		@media screen and(max-width: 900px) {
+			.inner{
+				.content{
+					display: block;
+	
+					.left{
+						width: 100%; 
+					}
+	
+					.right{
+						width: 100%;
+						padding-right: 0%;
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	section.featured-project{
+		background-color: #424143;
+		margin-bottom: 20px;
+
+		.inner{
+			h2{
+				color: #fff;
+				font-family: $font-headers;
+				font-size: 2.4rem;
+				font-weight: 500;
+				line-height: 130%;
+				text-transform: uppercase;
+				margin: 0 0 30px;
+			}
+
+			.project{
+				padding-left: 70px;
+				display: flex;
+				align-items: center;
+				gap: 60px;
+
+				.photo{
+					width: 50%;
+				}
+				.content{
+					width: 50%;
+					color: #fff;
+					font-family: Montserrat;
+					font-size: 1.6rem;
+					font-weight: 400;
+					line-height: 155%;
+
+					h1, h2, h3, h4{
+						color: $orange;
+						font-family: Montserrat;
+						font-size: 2rem;
+						font-weight: 700;
+						line-height: 155%;
+						margin: 0 0 10px 0;
+					}
+
+					a.btn{
+						margin-top: 10px;
+						display: inline-block;
+						background-color: #fff;
+						padding: 10px 22px;
+						font-family: Montserrat;
+						font-size: 1.6rem;
+						font-weight: 500;
+						line-height: 150%;
+						letter-spacing: -0.176px;
+						text-transform: uppercase;
+						transition: all .2s;
+						text-decoration: none;
+	
+						&:hover{
+							text-decoration: none;
+							background-color: darken($orange, 10%);
+						}
+					}
+				}
+			}
+		}
+
+		@media screen and(max-width: 1100px) {
+			.inner{
+				.project{
+					align-items: flex-start;
+				}
+			}
+		}
+
+		@media screen and(max-width: 900px) {
+			.inner{
+				.project{
+					display: block;
+					padding-left: 0;
+	
+					.photo{
+						width: 100%; 
+					}
+	
+					.content{
+						width: 100%;
+						padding-right: 0%;
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+	}
+}

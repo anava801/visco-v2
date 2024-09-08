@@ -1,0 +1,141 @@
+section.main-content{
+	background-color: #F5F4F3;
+	.inner{
+		padding: 70px 65px;
+		display: flex;
+
+		.content{
+			width: 30%;
+			font-family: Montserrat;
+			font-size: 1.6rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 150%;
+
+			h1{
+				display: inline-block;
+				font-family: $font-headers;
+				font-size: 3.6rem;
+				font-weight: 500;
+				line-height: 50px;
+				margin: 0 0 40px;
+				padding: 0;
+				text-transform: uppercase;
+				border-bottom: solid 8px $orange;
+			}
+
+			p{
+				margin: 5px 0;
+				padding: 0;
+			}
+
+			h2, h3, h4, h5{
+				font-weight: normal;
+				font-size: 2rem;
+				margin: 0;
+				padding: 0;
+				margin-bottom: 20px;
+			}
+
+			h2{
+				font-weight: bold;
+			}
+
+			.cta{
+				background-color: $orange;
+				margin-top: 30px;
+				position: relative;
+				display: inline-block;
+
+				&.play-icon{
+					a{
+						padding: 10px 95px 10px 22px;
+					}
+
+					img{
+						@include center-vertical;
+						position: absolute;
+						right: 15px;
+					}
+				}
+
+				a{
+					background-color: $orange;
+					padding: 10px 22px;
+					color: #fff;
+					font-family: Montserrat;
+					font-size: 1.6rem;
+					font-weight: 500;
+					line-height: 150%;
+					letter-spacing: -0.176px;
+					text-transform: uppercase;
+					transition: all .2s;
+					text-decoration: none;
+
+					&:hover{
+						text-decoration: none;
+						background-color: darken($orange, 10%);
+					}
+				}
+			}
+		}
+
+		.image{
+			width: 65%;
+			margin-left: 5%;
+			img{
+				width: 100%;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 1200px){
+		.inner{
+			padding: 70px 65px;
+			display: flex;
+	
+			.content{
+				width: 50%;
+				font-family: Montserrat;
+				font-size: 1.6rem;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 150%;
+	
+				h2, h3, h4, h5{
+					font-weight: normal;
+					font-size: 2rem;
+				}
+			}
+	
+			.image{
+				width: 60%;
+				margin-left: 5%;
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 900px){
+		.inner{
+			display: block;
+	
+			.content{
+				width: 100%;
+				margin-bottom: 30px;
+
+				h1{
+					font-size: 3rem;
+					margin: 0 0 20px;
+				}
+			}
+	
+			.image{
+				width: 100%;
+				margin-left: 0;
+			}
+		}
+	}
+}

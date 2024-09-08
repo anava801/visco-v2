@@ -1,0 +1,65 @@
+body.page-template-tmpl_news{
+	section.news{
+		margin-bottom: 20px;
+
+		.inner{
+			.news-container{
+				article{
+					display: flex;
+					align-items: center;
+					gap: 50px;
+					border-bottom: solid 1px $orange;
+					padding-bottom: 40px;
+					margin-bottom: 40px;
+					padding-right: 10%;
+	
+					.photo{
+						width: 60%;
+						max-width: 600px;
+						img{
+							width: 100%;
+						}
+					}
+	
+					.content{
+						width: 50%;
+						font-family: Montserrat;
+						font-size: 1.6rem;
+						font-weight: 400;
+						line-height: 155%;
+	
+						.title{
+							color: $orange;
+							font-family: Montserrat;
+							font-size: 2rem;
+							font-weight: 700;
+							line-height: 155%;
+						}
+					}
+					&:last-child{
+						border: none;
+					}
+				}
+			}
+		}
+
+		@media screen and(max-width: 800px) {
+			.inner .news-container{
+				article{
+					display: block;
+					padding-right: 0;
+	
+					.photo{
+						width: 100%;
+						max-width: 100%;
+						margin-bottom: 10px;
+					}
+	
+					.content{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

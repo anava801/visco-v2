@@ -1,0 +1,88 @@
+body.page-template-template-blog, body.single-post, body.single-news, body.category, body.page-template-template-news{
+	section.news-header{
+		background-color: #F5F4F3;
+
+		.title{
+			font-family: Montserrat;
+			color: $orange;
+			font-size: 2rem;
+			font-weight: 700;
+			line-height: 1em;
+			margin-bottom: 10px;
+		}
+
+		.post-meta{
+			display: flex;
+			color: $orange;
+			font-family: Montserrat;
+			font-weight: 400;
+			line-height: 155%;
+			font-size: 1.6rem;
+			
+			.date{
+				margin-right: 20px;
+			}
+
+			.read-time{	}
+		}
+
+		@media screen and(max-width: 800px) {
+			.inner .news-container{
+				article{
+					display: block;
+					padding-right: 0;
+	
+					.photo{
+						width: 100%;
+						max-width: 100%;
+						margin-bottom: 10px;
+					}
+	
+					.content{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	section.article{
+		.inner{
+			article{
+				font-family: Montserrat;
+				font-size: 1.6rem;
+				font-weight: 400;
+				line-height: 155%;
+
+				.content{
+					width: 80%;
+				}
+
+				img{
+					width: 100%;
+					max-width: 900px;
+					margin-bottom: 50px;
+				}
+			}
+
+			.btn-wrapper{
+				display: flex;
+				gap: 40px;
+				align-items: center;
+				position: relative;
+				margin-top: 60px;
+
+				a{
+					white-space: nowrap;
+					margin-top: 0;
+				}
+
+				.line{
+					background-color: $orange;
+					height: 2px;
+					width: 100%;
+				}
+			}
+		}
+	}
+}

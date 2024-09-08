@@ -1,0 +1,119 @@
+body.page-template-tmpl_about{
+	section.leadership{
+		margin-top: 20px;
+
+		.bios{
+			margin: 0 150px;
+			.bio{
+				display: flex;
+				gap: 60px;
+				margin-bottom: 40px;
+
+				.photo{
+					width: 40%;
+					img{
+						width: 100%;
+						max-width: 267px;
+					}
+				}
+
+				.content{
+					width: 80%;
+					font-family: Montserrat;
+					font-size: 1.6rem;
+					font-weight: 400;
+					line-height: 2.4rem;
+
+					.name-container{
+						display: flex;
+
+						.name{
+							color:$orange;
+							font-family: Montserrat;
+							font-size: 2rem;
+							font-weight: 700;
+						}
+
+						.title{
+							padding-left: 30px;
+							font-family: Montserrat;
+							font-size: 2rem;
+							font-weight: 400;
+							position: relative;
+							
+							&::before{
+								position: absolute;
+								display: inline-block;
+								content: '';
+								padding-left: 15px;
+								left: 15px;
+								border-left: solid 1px $text-color;
+								height: 15px;
+								@include center-vertical;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	section.quote{
+		background-color: $orange;
+
+		.inner{
+			padding: 80px 150px;
+			color: #fff;
+			font-family: Montserrat;
+			font-size: 4rem;
+			font-weight: 400;
+			line-height: 130%;
+			letter-spacing: -0.6px;
+		}
+	}
+
+	@media screen and(max-width: 1100px) {
+		section.leadership{
+			.bios{
+				margin: 0 0px;
+				.bio{
+					.photo{
+						width: 40%;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and(max-width: 900px) {
+		section.leadership{
+			.bios{
+				margin: 0 0px;
+				.bio{
+					display: block;
+					.photo{
+						width: 100%;
+						margin-bottom: 20px;
+						img{
+							max-width: 100%;
+						}
+					}
+					.content{
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		section.quote{
+			background-color: $orange;
+	
+			.inner{
+				font-size: 3rem;
+				font-weight: 400;
+				line-height: 130%;
+				letter-spacing: -0.6px;
+			}
+		}
+	}
+}
