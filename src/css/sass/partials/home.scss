@@ -310,4 +310,396 @@ body.page-template-tmpl_home{
 			}
 		}
 	}
+
+	section.about{
+		.inner{
+			background-color: #424143;
+			display: flex;
+			align-items: center;
+
+			.logo{
+				width: 25%;
+				img{
+					width: 100%;
+					max-width: 350px;
+				}
+			}
+
+			.right{
+				margin-left: auto;
+				width: 60%;
+				max-width: 712px;
+				h3{
+					color: $orange;
+					font-family: Montserrat;
+					font-size: 3rem;
+					font-weight: 600;
+					line-height: 106%;
+					margin: 0;
+				}
+
+				.content{
+					width: 100%;
+					display: flex;
+					align-items: center;
+					color: #fff;
+					width: 100%;
+					margin-top: 30px;
+
+					.body{
+						font-family: Montserrat;
+						font-size: 1.6rem;
+						font-weight: 400;
+						line-height: 155%;
+
+						ul,ol{
+							margin: 0 0 0 20px;
+							padding: 0;
+
+							li{
+								padding: 2px 0;
+							}
+						}
+					}
+					.cta{
+						margin-left: auto;
+						a{
+							margin-top: 0;
+						}
+					}
+				}
+			}
+		}
+
+		@media screen and(max-width: 900px) {
+			.inner{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+	
+				.logo{
+					text-align: center;
+					width: 100%;
+				}
+	
+				.right{
+					margin-top: 40px;
+					width: 100%;
+					max-width: initial;
+				}
+			}
+		}
+
+		@media screen and(max-width: 650px) {
+			.inner{
+				.right{
+					.content{
+						display: block;
+						.cta{
+							margin-top: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	section.featured-projects{
+		.inner{
+			h2{
+				font-family: $font-headers;
+				font-size: 2.4rem;
+				font-weight: 500;
+				line-height: 130%;
+				text-transform: uppercase;
+				margin: 0 0 30px;
+			}
+
+			.project{
+				display: flex;
+				align-items: center;
+				gap: 60px;
+				border-bottom: solid 1px $orange;
+				padding-bottom: 40px;
+				margin-bottom: 40px;
+
+				.photo{
+					width: 50%;
+				}
+				.content{
+					width: 50%;
+					font-family: Montserrat;
+					font-size: 1.6rem;
+					font-weight: 400;
+					line-height: 155%;
+
+					h1, h2, h3, h4{
+						color: $orange;
+						font-family: Montserrat;
+						font-size: 2rem;
+						font-weight: 700;
+						line-height: 155%;
+						margin: 0 0 10px 0;
+					}
+
+					a.btn{
+						margin-top: 10px;
+						display: inline-block;
+						background-color: #fff;
+						padding: 10px 22px;
+						font-family: Montserrat;
+						font-size: 1.6rem;
+						font-weight: 500;
+						line-height: 150%;
+						letter-spacing: -0.176px;
+						text-transform: uppercase;
+						transition: all .2s;
+						text-decoration: none;
+	
+						&:hover{
+							text-decoration: none;
+							background-color: darken($orange, 10%);
+						}
+					}
+				}
+
+				&:last-child{
+					border-bottom: none;
+					padding-bottom: 0;
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		@media screen and(max-width: 1100px) {
+			.inner{
+				.project{
+					align-items: flex-start;
+				}
+			}
+		}
+
+		@media screen and(max-width: 900px) {
+			.inner{
+				.project{
+					display: block;
+					padding-left: 0;
+	
+					.photo{
+						width: 100%; 
+					}
+	
+					.content{
+						width: 100%;
+						padding-right: 0%;
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	section.leadership{
+		background-color: #F5F4F3;
+
+		.inner{
+
+			h2{
+				font-family: $font-headers;
+				font-size: 2.4rem;
+				font-weight: 500;
+				line-height: 130%;
+				text-transform: uppercase;
+				margin: 0 0 30px;
+			}
+		}
+
+		.bios{
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px;
+
+			.bio{
+				width: 18%;
+
+				.photo{
+					margin-bottom: 20px;
+					img{
+						width: 100%;
+						max-width: 267px;
+					}
+				}
+
+				.content{
+					font-family: Montserrat;
+					font-size: 1.6rem;
+					font-weight: 400;
+					line-height: 2.4rem;
+
+					.name-container{
+						.name{
+							color:$orange;
+							font-family: Montserrat;
+							font-size: 2rem;
+							font-weight: 700;
+						}
+
+						.title{
+							font-family: Montserrat;
+							font-size: 2rem;
+							font-weight: 400;
+							position: relative;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	section.related-links{
+		background-color: $orange;
+		.inner{
+			h2{
+				font-family: $font-headers;
+				font-size: 2.4rem;
+				font-weight: 500;
+				line-height: 130%;
+				text-transform: uppercase;
+				margin: 0 0 30px;
+			}
+
+			.links{
+				width: 70%;
+				float: right;
+
+				.link{
+					display: flex;
+					align-items: flex-start;
+					border-bottom: solid 1px #fff;
+					padding-bottom: 38px;
+					margin-bottom: 38px;
+					
+					.logo{
+						width: 60%;
+						max-width: 340px;
+						text-align: center;
+						img{
+							color: #fff;
+							height: auto;
+							//width: 100%;
+						}
+						.arrow{
+							display: none;
+						}
+					}
+					p{
+						width: 40%;
+						font-family: Montserrat;
+						font-size: 1.5rem;
+						font-weight: 500;
+						line-height: 141.5%;
+						letter-spacing: -0.225px;
+
+						width: 65%;
+						color: #fff;
+						margin: 0;
+						padding: 0 10% 0 10%;
+						a{
+							font-weight: 400;
+							color: #fff;
+							text-decoration: none;
+						}
+					}
+
+					.arrow-desktop{
+						position: relative;
+						img{
+							position: relative;
+							left: 0;
+							transition: all .2s;
+						}
+					}
+
+					&:last-child{
+						border-bottom: none;
+						padding-bottom: 0;
+						margin-bottom: 0;
+					}
+
+					&:hover{
+						.arrow-desktop img{
+							left: 10px
+						}
+					}
+				}
+			}
+		}
+
+		@media only screen and (max-width: 960px){	
+			padding-bottom: 30px;
+			.inner{	
+				.links{
+					margin-top: 40px;
+					width: 100%;
+					float: none;
+					.link{
+						display: flex;
+						flex-direction: column;
+						.logo{
+							width: 100%;
+							display: flex;
+							max-width: initial;
+							padding-bottom: 2%;
+							margin-bottom: 2%;
+
+							img{
+								//width: 70%;
+								max-width: 300px;
+							}
+							.arrow{
+								text-align: right;
+								display: block;
+								width: 100%;
+								img{
+									max-width: 52px;
+								}
+							}
+						}
+						p{
+							width: 100%;
+							margin: 0;
+							padding: 0;
+						}
+						a.arrow-desktop{
+							display: none;
+						}
+					}
+				}
+			}
+		}
+
+		@media only screen and (max-width: 600px){	
+			.inner{	
+				h2{
+					font: 900 2rem 'Lato';
+					margin-bottom: 5%;
+				}
+	
+				.links{
+					.link{
+						.logo{
+							align-items: center;
+							img{
+								max-width: 70%;
+							}
+						}
+	
+						&:first-child{
+							margin-bottom: 3%;
+						}
+					}
+				}
+			}
+		}
+	}
 }

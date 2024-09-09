@@ -53,7 +53,8 @@ a.btn {
   letter-spacing: -0.176px;
   text-transform: uppercase;
   transition: all .2s;
-  text-decoration: none; }
+  text-decoration: none;
+  white-space: nowrap; }
   a.btn:hover {
     text-decoration: none;
     background-color: #924015; }
@@ -1377,6 +1378,264 @@ body.page-template-tmpl_home section.services .inner .services-container {
         margin-bottom: 10px; }
       body.page-template-tmpl_home section.services .inner .services-container .service .content {
         width: 100%; } }
+
+body.page-template-tmpl_home section.about .inner {
+  background-color: #424143;
+  display: flex;
+  align-items: center; }
+  body.page-template-tmpl_home section.about .inner .logo {
+    width: 25%; }
+    body.page-template-tmpl_home section.about .inner .logo img {
+      width: 100%;
+      max-width: 350px; }
+  body.page-template-tmpl_home section.about .inner .right {
+    margin-left: auto;
+    width: 60%;
+    max-width: 712px; }
+    body.page-template-tmpl_home section.about .inner .right h3 {
+      color: #E06A2D;
+      font-family: Montserrat;
+      font-size: 3rem;
+      font-weight: 600;
+      line-height: 106%;
+      margin: 0; }
+    body.page-template-tmpl_home section.about .inner .right .content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      width: 100%;
+      margin-top: 30px; }
+      body.page-template-tmpl_home section.about .inner .right .content .body {
+        font-family: Montserrat;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 155%; }
+        body.page-template-tmpl_home section.about .inner .right .content .body ul, body.page-template-tmpl_home section.about .inner .right .content .body ol {
+          margin: 0 0 0 20px;
+          padding: 0; }
+          body.page-template-tmpl_home section.about .inner .right .content .body ul li, body.page-template-tmpl_home section.about .inner .right .content .body ol li {
+            padding: 2px 0; }
+      body.page-template-tmpl_home section.about .inner .right .content .cta {
+        margin-left: auto; }
+        body.page-template-tmpl_home section.about .inner .right .content .cta a {
+          margin-top: 0; }
+
+@media screen and (max-width: 900px) {
+  body.page-template-tmpl_home section.about .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body.page-template-tmpl_home section.about .inner .logo {
+      text-align: center;
+      width: 100%; }
+    body.page-template-tmpl_home section.about .inner .right {
+      margin-top: 40px;
+      width: 100%;
+      max-width: initial; } }
+
+@media screen and (max-width: 650px) {
+  body.page-template-tmpl_home section.about .inner .right .content {
+    display: block; }
+    body.page-template-tmpl_home section.about .inner .right .content .cta {
+      margin-top: 20px; } }
+
+body.page-template-tmpl_home section.featured-projects .inner h2 {
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 130%;
+  text-transform: uppercase;
+  margin: 0 0 30px; }
+
+body.page-template-tmpl_home section.featured-projects .inner .project {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  border-bottom: solid 1px #E06A2D;
+  padding-bottom: 40px;
+  margin-bottom: 40px; }
+  body.page-template-tmpl_home section.featured-projects .inner .project .photo {
+    width: 50%; }
+  body.page-template-tmpl_home section.featured-projects .inner .project .content {
+    width: 50%;
+    font-family: Montserrat;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 155%; }
+    body.page-template-tmpl_home section.featured-projects .inner .project .content h1, body.page-template-tmpl_home section.featured-projects .inner .project .content h2, body.page-template-tmpl_home section.featured-projects .inner .project .content h3, body.page-template-tmpl_home section.featured-projects .inner .project .content h4 {
+      color: #E06A2D;
+      font-family: Montserrat;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 155%;
+      margin: 0 0 10px 0; }
+    body.page-template-tmpl_home section.featured-projects .inner .project .content a.btn {
+      margin-top: 10px;
+      display: inline-block;
+      background-color: #fff;
+      padding: 10px 22px;
+      font-family: Montserrat;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 150%;
+      letter-spacing: -0.176px;
+      text-transform: uppercase;
+      transition: all .2s;
+      text-decoration: none; }
+      body.page-template-tmpl_home section.featured-projects .inner .project .content a.btn:hover {
+        text-decoration: none;
+        background-color: #be531c; }
+  body.page-template-tmpl_home section.featured-projects .inner .project:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0; }
+
+@media screen and (max-width: 1100px) {
+  body.page-template-tmpl_home section.featured-projects .inner .project {
+    align-items: flex-start; } }
+
+@media screen and (max-width: 900px) {
+  body.page-template-tmpl_home section.featured-projects .inner .project {
+    display: block;
+    padding-left: 0; }
+    body.page-template-tmpl_home section.featured-projects .inner .project .photo {
+      width: 100%; }
+    body.page-template-tmpl_home section.featured-projects .inner .project .content {
+      width: 100%;
+      padding-right: 0%;
+      margin-top: 20px; } }
+
+body.page-template-tmpl_home section.leadership {
+  background-color: #F5F4F3; }
+  body.page-template-tmpl_home section.leadership .inner h2 {
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: uppercase;
+    margin: 0 0 30px; }
+  body.page-template-tmpl_home section.leadership .bios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; }
+    body.page-template-tmpl_home section.leadership .bios .bio {
+      width: 18%; }
+      body.page-template-tmpl_home section.leadership .bios .bio .photo {
+        margin-bottom: 20px; }
+        body.page-template-tmpl_home section.leadership .bios .bio .photo img {
+          width: 100%;
+          max-width: 267px; }
+      body.page-template-tmpl_home section.leadership .bios .bio .content {
+        font-family: Montserrat;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.4rem; }
+        body.page-template-tmpl_home section.leadership .bios .bio .content .name-container .name {
+          color: #E06A2D;
+          font-family: Montserrat;
+          font-size: 2rem;
+          font-weight: 700; }
+        body.page-template-tmpl_home section.leadership .bios .bio .content .name-container .title {
+          font-family: Montserrat;
+          font-size: 2rem;
+          font-weight: 400;
+          position: relative; }
+
+body.page-template-tmpl_home section.related-links {
+  background-color: #E06A2D; }
+  body.page-template-tmpl_home section.related-links .inner h2 {
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: uppercase;
+    margin: 0 0 30px; }
+  body.page-template-tmpl_home section.related-links .inner .links {
+    width: 70%;
+    float: right; }
+    body.page-template-tmpl_home section.related-links .inner .links .link {
+      display: flex;
+      align-items: flex-start;
+      border-bottom: solid 1px #fff;
+      padding-bottom: 38px;
+      margin-bottom: 38px; }
+      body.page-template-tmpl_home section.related-links .inner .links .link .logo {
+        width: 60%;
+        max-width: 340px;
+        text-align: center; }
+        body.page-template-tmpl_home section.related-links .inner .links .link .logo img {
+          color: #fff;
+          height: auto; }
+        body.page-template-tmpl_home section.related-links .inner .links .link .logo .arrow {
+          display: none; }
+      body.page-template-tmpl_home section.related-links .inner .links .link p {
+        width: 40%;
+        font-family: Montserrat;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 141.5%;
+        letter-spacing: -0.225px;
+        width: 65%;
+        color: #fff;
+        margin: 0;
+        padding: 0 10% 0 10%; }
+        body.page-template-tmpl_home section.related-links .inner .links .link p a {
+          font-weight: 400;
+          color: #fff;
+          text-decoration: none; }
+      body.page-template-tmpl_home section.related-links .inner .links .link .arrow-desktop {
+        position: relative; }
+        body.page-template-tmpl_home section.related-links .inner .links .link .arrow-desktop img {
+          position: relative;
+          left: 0;
+          transition: all .2s; }
+      body.page-template-tmpl_home section.related-links .inner .links .link:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0; }
+      body.page-template-tmpl_home section.related-links .inner .links .link:hover .arrow-desktop img {
+        left: 10px; }
+  @media only screen and (max-width: 960px) {
+    body.page-template-tmpl_home section.related-links {
+      padding-bottom: 30px; }
+      body.page-template-tmpl_home section.related-links .inner .links {
+        margin-top: 40px;
+        width: 100%;
+        float: none; }
+        body.page-template-tmpl_home section.related-links .inner .links .link {
+          display: flex;
+          flex-direction: column; }
+          body.page-template-tmpl_home section.related-links .inner .links .link .logo {
+            width: 100%;
+            display: flex;
+            max-width: initial;
+            padding-bottom: 2%;
+            margin-bottom: 2%; }
+            body.page-template-tmpl_home section.related-links .inner .links .link .logo img {
+              max-width: 300px; }
+            body.page-template-tmpl_home section.related-links .inner .links .link .logo .arrow {
+              text-align: right;
+              display: block;
+              width: 100%; }
+              body.page-template-tmpl_home section.related-links .inner .links .link .logo .arrow img {
+                max-width: 52px; }
+          body.page-template-tmpl_home section.related-links .inner .links .link p {
+            width: 100%;
+            margin: 0;
+            padding: 0; }
+          body.page-template-tmpl_home section.related-links .inner .links .link a.arrow-desktop {
+            display: none; } }
+  @media only screen and (max-width: 600px) {
+    body.page-template-tmpl_home section.related-links .inner h2 {
+      font: 900 2rem 'Lato';
+      margin-bottom: 5%; }
+    body.page-template-tmpl_home section.related-links .inner .links .link .logo {
+      align-items: center; }
+      body.page-template-tmpl_home section.related-links .inner .links .link .logo img {
+        max-width: 70%; }
+    body.page-template-tmpl_home section.related-links .inner .links .link:first-child {
+      margin-bottom: 3%; } }
 
 section.main-content {
   background-color: #F5F4F3; }
