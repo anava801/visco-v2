@@ -504,37 +504,37 @@ function casestudies_post_type() {
 }
 add_action( 'init', 'casestudies_post_type', 0 );
 
-function services_post_type() {
+function service_category_post_type() {
 	$labels = array(
-		'name'                  => _x( 'Services', 'Services General Name' ),
-		'singular_name'         => _x( 'Services', 'Services Singular Name' ),
-		'menu_name'             => __( 'Services' ),
-		'name_admin_bar'        => __( 'Services' ),
-		'attributes'            => __( 'Services Attributes' ),
+		'name'                  => _x( 'Service Category', 'Service Category General Name' ),
+		'singular_name'         => _x( 'Service Category', 'Service Category Singular Name' ),
+		'menu_name'             => __( 'Service Categories' ),
+		'name_admin_bar'        => __( 'Service Categories' ),
+		'attributes'            => __( 'Service Category Attributes' ),
 		'parent_item_colon'     => __( 'Parent Item:' ),
-		'all_items'             => __( 'All Services' ),
-		'add_new_item'          => __( 'Add New Service' ),
+		'all_items'             => __( 'All Service Categories' ),
+		'add_new_item'          => __( 'Add New Service Category' ),
 		'add_new'               => __( 'Add New' ),
-		'new_item'              => __( 'New Service' ),
-		'edit_item'             => __( 'Edit Service' ),
-		'update_item'           => __( 'Update Service' ),
-		'view_item'             => __( 'View Services' ),
-		'view_items'            => __( 'View Services' ),
-		'search_items'          => __( 'Search Services' ),
+		'new_item'              => __( 'New Service Category' ),
+		'edit_item'             => __( 'Edit Service Category' ),
+		'update_item'           => __( 'Update Service Category' ),
+		'view_item'             => __( 'View Service Category' ),
+		'view_items'            => __( 'View Service Categories' ),
+		'search_items'          => __( 'Search Service Category' ),
 		'not_found'             => __( 'Not found' ),
 		'not_found_in_trash'    => __( 'Not found in Trash' ),
 		'featured_image'        => __( 'Featured Image' ),
 		'set_featured_image'    => __( 'Set featured image' ),
 		'remove_featured_image' => __( 'Remove featured image' ),
 		'use_featured_image'    => __( 'Use as featured image' ),
-		'insert_into_item'      => __( 'Insert into Services' ),
-		'uploaded_to_this_item' => __( 'Uploaded to this Services' ),
+		'insert_into_item'      => __( 'Insert into Service Categories' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this Service Category' ),
 		'items_list'            => __( 'Service list' ),
 		'items_list_navigation' => __( 'Service list navigation' ),
 		'filter_items_list'     => __( 'Filter Service list' ),
 	);
 	$args = array(
-		'label'                 => __( 'Services' ),
+		'label'                 => __( 'Service Category' ),
 		'description'           => __( 'Description' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'page-attributes' ),
@@ -552,10 +552,10 @@ function services_post_type() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'services', $args );
+	register_post_type( 'servicecategory', $args );
 
 }
-add_action( 'init', 'services_post_type', 0 );
+add_action( 'init', 'service_category_post_type', 0 );
 
 /*------------------------------------*\
     ShortCode Functions

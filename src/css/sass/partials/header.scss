@@ -124,12 +124,14 @@ body{
 		//transition: all .1s;
 		padding: 40px;
 		background-color: #000;
+		transition: all .2s;
 
 		h1{
 			margin: 0;
 			padding: 0;
 		}
 		img{
+			transition: all .2s;
 			max-width: 166px;
 			width: 100%;
 		}
@@ -149,10 +151,10 @@ body{
 		-moz-transform: rotate(0deg);
 		-o-transform: rotate(0deg);
 		transform: rotate(0deg);
-		-webkit-transition: .5s ease-in-out;
-		-moz-transition: .5s ease-in-out;
-		-o-transition: .5s ease-in-out;
-		transition: .5s ease-in-out;
+		-webkit-transition: .2s ease-in-out;
+		-moz-transition: .2s ease-in-out;
+		-o-transition: .2s ease-in-out;
+		transition: .2s ease-in-out;
 		cursor: pointer;
 	  }
 	  
@@ -219,6 +221,19 @@ body{
 		transform: rotate(-45deg);
 		top: 26px;
 		left: 5px;
+	}
+
+	&.uk-sticky-below{
+		#nav-icon4 {
+			top: 30px;
+		}
+		  
+		.logo{
+			padding: 25px 40px;
+			img{
+				max-width: 100px;
+			}
+		}
 	}
 }
 

@@ -66,7 +66,7 @@
 				<?php 
 					$itemCount = 0;
 					$query_args = array(  
-						'post_type' => 'services',
+						'post_type' => 'servicecategory',
 						'post_status' => 'publish',
 						'posts_per_page' => 100,
 						'order' => 'DESC'
