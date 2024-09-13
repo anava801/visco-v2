@@ -108,6 +108,10 @@ body.page-template-tmpl_contact{
 					}
 				}
 			}
+
+			.gform_wrapper .gform_footer input{
+				color: $text-color;
+			}
 		}
 	
 		@media only screen and (max-width: 1200px){
@@ -143,6 +147,18 @@ body.page-template-tmpl_contact{
 				.map{
 					width: 100%;
 					margin-left: 0;
+				}
+			}
+		}
+
+		@media only screen and (max-width: 600px){
+			.inner{
+				.map{
+					.headquarters-content{
+						display: block;
+						gap: 0;
+						width: 100%;
+					}
 				}
 			}
 		}

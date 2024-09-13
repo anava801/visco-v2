@@ -32,13 +32,12 @@
 					$category = get_the_category($post->ID)[0]->name;
 					$categoryId = get_the_category($post->ID)[0]->cat_ID;
 				?>
-				<article class="post page featured">
+				<article>
 					<?php
-						if($postImage != '') echo '<img src="'. $postImage .'" alt="' . $post->post_title . '"><div class="divider"></div>';
+						if($postImage != '') echo '<div class="photo"><img src="'. $postImage .'" alt="' . $post->post_title . '"></div>';
 					?>
 					<div class="content"><?php echo the_content() ?></div>
 					<?php //comments_template(); ?>
-					<div class="divider"></div>
 				</article>
 			<?php endwhile; ?>
 
@@ -49,7 +48,7 @@
 			<?php endif; ?>
 
 			<div class="btn-wrapper">
-				<a href="/news" class="btn">View All Posts</a>
+				<a href="<?php echo get_site_url() ?>/news" class="btn">View All Posts</a>
 				<div class="line"></div>
 			</div>
 		</div>

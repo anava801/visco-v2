@@ -91,4 +91,31 @@ body.page-template-tmpl_about{
 			}
 		}
 	}
+
+	@media screen and(max-width: 900px) {
+		section.leadership{
+			.bios{
+				.bio{
+					.content{
+						.name-container{
+							display: block;
+	
+							.name{
+								font-size: 2rem;
+							}
+	
+							.title{
+								padding-left: 0;
+								font-size: 1.8rem;
+								
+								&::before{
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

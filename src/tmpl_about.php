@@ -28,6 +28,9 @@
 						$title = get_sub_field('title');
 						$bio = get_sub_field('bio');
 						$photo = get_sub_field('photo');
+						$bioLink = get_sub_field('bio_link');
+						$bioLinkLabel = get_sub_field('bio_link_label');
+						$bioLinkLabel = $bioLinkLabel == '' ? 'Read More' : $bioLinkLabel;
 
 						echo '<div class="bio">'.
 							'	<div class="photo"><img src="' . $photo . '" alt="' . $name . '"></div>'.
@@ -36,8 +39,11 @@
 							'			<div class="name">' . $name . '</div>'.
 							'			<div class="title">' . $title . '</div>'.
 							'		</div>'.
-							'		<p>' . $bio . '</p>'.
-							'	</div>'.
+							'		<p>' . $bio . '</p>';
+						if($bioLink != ''){
+							echo '		<a href="' . $bioLink . '" class="btn" target="_blank">' . $bioLinkLabel . '</a>';
+						}
+						echo '	</div>'.
 							'</div>';
 					endwhile;
 				?>

@@ -61,7 +61,7 @@ body.page-template-template-blog, body.single-post, body.single-news, body.categ
 				img{
 					width: 100%;
 					max-width: 900px;
-					margin-bottom: 50px;
+					margin-bottom: 40px;
 				}
 			}
 
@@ -81,6 +81,16 @@ body.page-template-template-blog, body.single-post, body.single-news, body.categ
 					background-color: $orange;
 					height: 2px;
 					width: 100%;
+				}
+			}
+		}
+
+		@media only screen and (max-width: 7200px){
+			.inner{
+				article{
+					.content{
+						width: 100%;
+					}
 				}
 			}
 		}

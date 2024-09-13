@@ -52,7 +52,7 @@
 				<div class="content">
 					<h3><?php  echo $title ?></h3>
 					<?php echo $body ?>
-					<a class="btn" href="/projects#p<?php echo $project->ID ?>">Learn More</a>
+					<a class="btn white" href="<?php echo get_site_url() ?>/projects#p<?php echo $project->ID ?>">Learn More</a>
 				</div>
 			</div>
 		</div>

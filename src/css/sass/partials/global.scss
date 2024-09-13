@@ -2,6 +2,12 @@ html, body{
 	font-size: 10px !important;
 }
 
+sup{
+	font-size: .6em;
+	top: -.6em;
+	color: inherit;
+}
+
 a.btn{
 	color: #fff;
 	margin-top: 15px;
@@ -17,6 +23,10 @@ a.btn{
 	transition: all .2s;
 	text-decoration: none;
 	white-space: nowrap;
+
+	&:active, &:focus{
+		text-decoration: none;
+	}
 
 	&:hover{
 		text-decoration: none;
@@ -40,7 +50,7 @@ h1{
 	font-family: $font-headers !important;
 	font-size: 40px;
 	font-weight: 500;
-	line-height: 50px;
+	line-height: 110%;
 	margin: 0 0 40px;
 	padding: 0;
 	text-transform: uppercase;
@@ -134,14 +144,14 @@ h1{
 
 .gradient-header{
 	display: flex;
-	align-items: center;
+	//align-items: center;
 	margin-bottom: 50px;
 
 	h2{
 		font-family: $font-headers;
 		font-size: 2.4rem;
 		font-weight: 500;
-		line-height: 2rem;
+		line-height: 2.4rem;
 		text-transform: uppercase;
 		margin: 0 20px 0 0;
 		padding: 0;
@@ -152,6 +162,7 @@ h1{
 	}
 
 	.gradient{
+		margin-top: 4px;
 		height: 17px;
 		width: 100%;
 		max-width: 380px;

@@ -70,11 +70,20 @@ body.page-template-tmpl_services{
 		}
 
 		@media screen and(max-width: 800px) {
-			.inner .services-container{
+			.inner{
 				padding-left: 0px;
+
 				.service{
 					display: block;
 					padding-right: 0;
+
+					.content{
+						margin-bottom: 10px;
+
+						.gradient-header{
+							margin-bottom: 20px;
+						}
+					}
 	
 					.photo{
 						width: 100%;
@@ -132,7 +141,7 @@ body.page-template-tmpl_services{
 		}
 
 		@media screen and(max-width: 800px) {
-			section.services .service-items{
+			.service-items{
 				.service{
 					display: block;
 					padding-right: 0;

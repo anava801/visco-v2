@@ -91,6 +91,10 @@ body.page-template-tmpl_innovation-park{
 						font-weight: 700;
 						line-height: 155%;
 						margin: 0 0 10px 0;
+						
+						sup{
+							color: $orange;
+						}
 					}
 
 					a.btn{

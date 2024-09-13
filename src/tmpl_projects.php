@@ -23,7 +23,7 @@
 	<section class="case-studies">
 		<div class="inner">
 			<div class="gradient-header">
-				<h2>Case Studies</h2>
+				<h2>Project Highlights</h2>
 				<div class="gradient"></div>
 			</div>
 
@@ -41,7 +41,7 @@
 					foreach($caseStudies as $caseStudy){
 						$title = $caseStudy->post_title;
 						$content = $caseStudy->post_content;
-						$photo = wp_get_attachment_image_src(get_post_thumbnail_id($project->ID), 'single-post-thumbnail')[0];
+						$photo = wp_get_attachment_image_src(get_post_thumbnail_id($caseStudy->ID), 'single-post-thumbnail')[0];
 						$itemCount++;
 						$flipped = $itemCount % 2 == 0 ? "flipped" : "";
 
@@ -85,7 +85,7 @@
 							'	<div class="content">'.
 							'		<div class="title">' . $title . '</div>'.
 							'		' . $content .
-							'		</br><a class="btn" href="/services">Learn More</a>'.
+							'		</br><a class="btn" href="'. get_site_url() . '/services">Learn More</a>'.
 							'	</div>'.
 							'</div>';
 					}
